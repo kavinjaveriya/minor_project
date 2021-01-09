@@ -30,8 +30,8 @@ model.fit(trainset , epochs=5 , validation_data=testset , steps_per_epoch=70, va
 model.save("cnn.h5")
 scores = model.evaluate(testset,verbose=1)
 print('loss',scores[0])
-print('accuracy',scores[1])
-accuracy=scores[1]*100
-file = open("/code/accuracy.txt", "w")
+print('acc',scores[1])
+acc=scores[1]*100
+file = open("/code/acc.txt", "w")
 f.write(str(accuracy))
 f.close()
