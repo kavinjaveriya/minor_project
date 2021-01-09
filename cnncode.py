@@ -33,5 +33,5 @@ print('loss',scores[0])
 print('acc',scores[1])
 acc=scores[1]*100
 file = open("/code/accuracy.txt", "w")
-f.write(str(acc))
-f.close()
+file.write(str(acc))
+file.close()
