@@ -32,6 +32,6 @@ scores = model.evaluate(testset,verbose=1)
 print('loss',scores[0])
 print('acc',scores[1])
 acc=scores[1]*100
-file = open("/code/acc.txt", "w")
-f.write(str(accuracy))
+file = open("/code/accuracy.txt", "w")
+f.write(str(acc))
 f.close()
